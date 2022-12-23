@@ -1,0 +1,47 @@
+[
+  {
+    "model": "products.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Одежда",
+      "slug": "odezhda",
+      "description": "Описание для одержды"
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Обувь",
+      "slug": "obuv",
+      "description": "Описание для обуви"
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Аксессуары",
+      "slug": "acsessuary",
+      "description": "Описание для аксессуаров"
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 4,
+    "fields": {
+      "name": "Подарки",
+      "slug": "gifts",
+      "description": "Описание для подарков"
+    }
+  },
+  {
+    "model": "products.productcategory",
+    "pk": 5,
+    "fields": {
+      "name": "Новинки",
+      "slug": "new",
+      "description": "Описание для новинок"
+    }
+  }
+]
