@@ -105,7 +105,7 @@ class UserRegistrationForm(UserCreationForm):
         )
 
 
-class UserEditForm(UserChangeForm):
+class UserProfileForm(UserChangeForm):
     first_name = forms.CharField(
         label='Имя',
         widget=forms.TextInput(
@@ -125,6 +125,7 @@ class UserEditForm(UserChangeForm):
         )
     )
     username = forms.CharField(
+        required=False,
         label='Логин',
         widget=forms.TextInput(
             attrs={
@@ -135,6 +136,7 @@ class UserEditForm(UserChangeForm):
         )
     )
     email = forms.EmailField(
+        required=False,
         widget=forms.EmailInput(
             attrs={
                 'class': 'form-control',
@@ -144,6 +146,7 @@ class UserEditForm(UserChangeForm):
         )
     )
     image = forms.ImageField(
+        required=False,
         label='Аватар',
         widget=forms.FileInput(
             attrs={
@@ -152,7 +155,6 @@ class UserEditForm(UserChangeForm):
             }
         )
     )
-
 
     class Meta:
         model = User
